@@ -1,0 +1,13 @@
+.leaf {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .leaf {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 24%;
+  }
+}

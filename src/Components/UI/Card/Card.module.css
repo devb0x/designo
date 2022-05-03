@@ -1,0 +1,47 @@
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  width: 327px;
+  height: 100%;
+  margin-inline: auto;
+  color: var(--white);
+  text-align: center;
+}
+
+.card-title {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  margin-block: 0;
+}
+
+.card-paragraph {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  margin-block: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .card-wrapper {
+    width: 50%;
+  }
+  .card-title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .card-paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card-wrapper {
+    width: 32%;
+  }
+}
