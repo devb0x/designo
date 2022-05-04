@@ -25,16 +25,20 @@ const ProjectsList = () => {
       }
     >
       {projectsDisplay.map((el, index) => (
-        <div key={index} className={`${classes['project-card']} ${el.class}`}>
+        <Link
+          to={el.url}
+          key={index}
+          className={`${classes['project-card']} ${el.class}`}
+        >
           <h3 className={`${classes['project-card__title']}`}>{el.title}</h3>
-          <Link to={el.url} className={`${classes['project-card__link']}`}>
+          <div className={`${classes['project-card__link']}`}>
             view projects
             <span style={{marginLeft: '16px'}}>
               <img src={rightArrow} alt="right arrow"/>
             </span>
-          </Link>
+          </div>
           <div className={`${classes['project-card__mask']}`}/>
-        </div>
+        </Link>
       ))}
     </section>
   )

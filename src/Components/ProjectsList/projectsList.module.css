@@ -43,6 +43,9 @@
   inset: 0;
   z-index: 0;
 }
+.project-card:hover > .project-card__mask {
+  background-color: hsla(10, 72%, 66%, .8);
+}
 
 @media screen and (min-width: 768px) {
   .project-card {
