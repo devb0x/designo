@@ -37,7 +37,8 @@ a {
 }
 
 .content {
-  max-width: 1110px;
+  width: 327px;
+  margin-inline: auto;
 }
 
 /* typography */
@@ -84,7 +85,6 @@ a {
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
-
 .btn-on-dark {
   background-color: var(--white);
   color: var(--darkGrey);
@@ -93,7 +93,6 @@ a {
   background-color: var(--lightPeach);
   color: var(--white);
 }
-
 .btn-on-light {
   background-color: var(--peach);
   color: var(--white);
@@ -123,6 +122,9 @@ a {
     width: 689px;
     margin-inline: auto;
   }
+  .content {
+    width: 689px;
+  }
 
   .card {
     border-radius: 15px;
@@ -140,6 +142,9 @@ a {
   .main {
     width: 1111px;
   }
+  .content {
+    width: 1111px;
+  }
 
   .card-top {
     background-position: center left;
@@ -148,6 +153,42 @@ a {
     height: 292px;
   }
 
+}
+
+/* specific class for background image */
+.web-design__card {
+  background-image: url(./assets/home/mobile/image-web-design.jpg);
+  background-repeat: no-repeat;
+}
+.app-design__card {
+  background-image: url(./assets/home/mobile/image-app-design.jpg);
+  background-repeat: no-repeat;
+}
+.graphic-design__card {
+  background-image: url(./assets/home/mobile/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .web-design__card {
+    background-image: url(./assets/home/tablet/image-web-design.jpg);
+  }
+  .app-design__card {
+    background-image: url(./assets/home/tablet/image-app-design.jpg);
+  }
+  .graphic-design__card {
+    background-image: url(./assets/home/tablet/image-graphic-design.jpg);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .web-design__card {
+    background-image: url(./assets/home/desktop/image-web-design-large.jpg);
+  }
+  .app-design__card {
+    background-image: url(./assets/home/desktop/image-app-design.jpg);
+  }
+  .graphic-design__card {
+    background-image: url(./assets/home/desktop/image-graphic-design.jpg);
+  }
 }
 
 .app-design-bg {
