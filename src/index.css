@@ -12,6 +12,13 @@
   --white: hsl(0, 0%, 100%);
   --lightGrey: hsl(210, 17%, 95%);
 
+  --jeez: url('../public/assets/shared/desktop/icon-facebook.svg');
+  --facebookIcon: url(./assets/shared/desktop/icon-facebook.svg);
+  --youtubeIcon: url(./assets/shared/desktop/icon-youtube.svg);
+  --twitterIcon: url(./assets/shared/desktop/icon-twitter.svg);
+  --pinterestIcon: url(./assets/shared/desktop/icon-pinterest.svg);
+  --instagramIcon: url(./assets/shared/desktop/icon-instagram.svg);
+
   z-index: 5;
 }
 
@@ -23,7 +30,7 @@ body {
 }
 
 .root {
-  max-width: 1440px;
+  /*max-width: 1440px;*/
   margin-inline: auto;
   overflow: hidden;
   /*outline: 1px solid red;*/
@@ -75,6 +82,7 @@ a {
   position: relative;
   z-index: 5;
   border: 0;
+  height: fit-content;
   border-radius: 8px;
   padding: 16px 24px;
   font-weight: 500;

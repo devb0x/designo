@@ -8,38 +8,40 @@ import Homepage from "./Components/Pages/Homepage"
 import WebDesign from "./Components/Pages/WebDesign"
 import AppDesign from "./Components/Pages/AppDesign"
 import GraphicDesign from "./Components/Pages/GraphDesign"
+import Footer from "./Components/Footer/Footer"
 
 
 
 function App() {
   return (
-    <main className="main">
       <Router>
         <Navbar />
+        <main className="main">
           <Routes>
             <Route
               exact path={'/'}
               element={ <Navigate to="/homepage" /> }
             />
-          <Route
-            exact path={'/homepage'}
-            element={ <Homepage /> }
-          />
-          <Route
-            exact path={'/web-design'}
-            element={ <WebDesign /> }
-          />
-          <Route
-            exact path={'/app-design'}
-            element={ <AppDesign /> }
-          />
-          <Route
-            exact path={'/graphic-design'}
-            element={ <GraphicDesign /> }
-          />
-        </Routes>
+            <Route
+              exact path={'/homepage'}
+              element={ <Homepage /> }
+            />
+            <Route
+              exact path={'/web-design'}
+              element={ <WebDesign /> }
+            />
+            <Route
+              exact path={'/app-design'}
+              element={ <AppDesign /> }
+            />
+            <Route
+              exact path={'/graphic-design'}
+              element={ <GraphicDesign /> }
+            />
+          </Routes>
+        </main>
+        <Footer />
       </Router>
-    </main>
   )
 }
 
