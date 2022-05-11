@@ -27,7 +27,7 @@ const Hero = () => {
         <img src={bgPattern} alt="pattern" className={`${classes['pattern']}`}/>
         <img src={heroPhone} alt="phone" className={`${classes['phone-img']}`}/>
       </div>
-      <Leaf />
+      <Leaf class="leaf" />
     </section>
   )
 }

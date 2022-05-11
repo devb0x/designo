@@ -1,0 +1,57 @@
+.intro {
+  position: relative;
+  height: 320px;
+  background-color: var(--peach);
+  display: flex;
+  background-image: var(--introBackground);
+  background-position: top right;
+  margin-bottom: 48px;
+}
+
+.intro-wrapper {
+  width: 327px;
+  text-align: center;
+  color: var(--white);
+  margin: auto;
+}
+
+.intro-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.intro-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+@media screen and (min-width: 768px) {
+  .intro {
+    width: 689px;
+    height: 252px;
+    border-radius: 15px;
+    background-position: center left;
+  }
+  .intro-wrapper {
+    width: 59%;
+  }
+  .intro-title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .intro-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .intro {
+    width: 1110px;
+  }
+  .intro-wrapper {
+    width: 33%;
+  }
+}

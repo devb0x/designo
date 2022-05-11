@@ -14,10 +14,10 @@ const Cta = () => {
         <p className={`${classes['cta-paragraph']}`}>
           Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.
         </p>
+        <Button class='btn btn-on-dark'>
+          Get in touch
+        </Button>
       </div>
-      <Button class='btn btn-on-dark'>
-        Get in touch
-      </Button>
     </div>
   )
 }

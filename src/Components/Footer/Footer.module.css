@@ -123,6 +123,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-inline: 0;
+    padding-block: 166px 80px;
   }
   .footer-main__container {
     width: 690px;
@@ -171,6 +172,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .footer {
+    padding-block: 144px 72px;
+  }
   .footer-main__container {
     width: 1110px;
   }

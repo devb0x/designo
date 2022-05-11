@@ -1,4 +1,5 @@
-.leaf {
+.leaf,
+.leaf-reverse {
   display: none;
 }
 
@@ -9,5 +10,13 @@
     position: absolute;
     top: 50%;
     right: 24%;
+  }
+  .leaf-reverse {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: rotate(-180deg);
   }
 }

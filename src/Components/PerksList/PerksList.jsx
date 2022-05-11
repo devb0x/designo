@@ -4,6 +4,7 @@ import Perks from "./Perks"
 import classes from './PerksList.module.css'
 
 import bgPattern from '../../assets/home/desktop/bg-pattern-hero-home.svg'
+import Leaf from "../UI/Leaf/Leaf"
 
 const PerksList = () => {
 
@@ -34,6 +35,7 @@ const PerksList = () => {
 
         </div>
       ))}
+      <Leaf class="leaf-reverse"/>
     </section>
   )
 }

@@ -19,6 +19,8 @@
   --pinterestIcon: url(./assets/shared/desktop/icon-pinterest.svg);
   --instagramIcon: url(./assets/shared/desktop/icon-instagram.svg);
 
+  --introBackground: url(./assets/web-design/desktop/bg-pattern-intro-web.svg);
+
   z-index: 5;
 }
 
