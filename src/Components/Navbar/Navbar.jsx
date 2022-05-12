@@ -5,6 +5,7 @@ import hamburger from '../../assets/shared/mobile/icon-hamburger.svg'
 import close from '../../assets/shared/mobile/icon-close.svg'
 
 import classes from './Navbar.module.css'
+import {Link} from "react-router-dom"
 
 const Navbar = (props) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,9 +27,9 @@ const Navbar = (props) => {
           `${classes['nav-list']} ${classes['mobile']}`
       }>
         <li className={`${classes['nav-list__item']}`}>
-          <a href="/">
+          <Link to="/about">
             our company
-          </a>
+          </Link>
         </li>
         <li className={`${classes['nav-list__item']}`}>
           <a href="/">

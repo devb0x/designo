@@ -12,7 +12,6 @@
   --white: hsl(0, 0%, 100%);
   --lightGrey: hsl(210, 17%, 95%);
 
-  --jeez: url('../public/assets/shared/desktop/icon-facebook.svg');
   --facebookIcon: url(./assets/shared/desktop/icon-facebook.svg);
   --youtubeIcon: url(./assets/shared/desktop/icon-youtube.svg);
   --twitterIcon: url(./assets/shared/desktop/icon-twitter.svg);
@@ -20,6 +19,14 @@
   --instagramIcon: url(./assets/shared/desktop/icon-instagram.svg);
 
   --introBackground: url(./assets/web-design/desktop/bg-pattern-intro-web.svg);
+
+  /* about page images */
+  --aboutHeroMobile: url(./assets/about/mobile/image-about-hero.jpg);
+  --aboutHeroTablet: url(./assets/about/tablet/image-about-hero.jpg);
+  --aboutHeroDesktop: url(./assets/about/desktop/image-about-hero.jpg);
+  --aboutHeroBgMobile: url(./assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+  --aboutHeroBgDesktop: url(./assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+  --aboutCardPattern: url(./assets/shared/desktop/bg-pattern-three-circles.svg);
 
   z-index: 5;
 }

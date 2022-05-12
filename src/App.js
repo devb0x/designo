@@ -9,6 +9,7 @@ import WebDesign from "./Components/Pages/WebDesign"
 import AppDesign from "./Components/Pages/AppDesign"
 import GraphicDesign from "./Components/Pages/GraphDesign"
 import Footer from "./Components/Footer/Footer"
+import About from "./Components/Pages/AboutPage/About"
 
 
 
@@ -37,6 +38,10 @@ function App() {
             <Route
               exact path={'/graphic-design'}
               element={ <GraphicDesign /> }
+            />
+            <Route
+              exact path={'/about'}
+              element={ <About /> }
             />
           </Routes>
         </main>
