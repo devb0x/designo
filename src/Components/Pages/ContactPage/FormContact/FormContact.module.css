@@ -1,0 +1,115 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 72px;
+}
+
+.form > button {
+  margin-inline: auto;
+  width: 152px;
+}
+
+.form-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-div:nth-child(1) {
+  margin-top: 0;
+}
+.form-div:nth-child(4) {
+  border: 0;
+  margin-bottom: 40px;
+}
+
+.form label {
+  display: none;
+}
+
+.form-div input,
+.form-div textarea {
+  padding-left: 14px;
+}
+
+.form input,
+.form input::placeholder {
+  border: 0;
+  background-color: transparent;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  padding-bottom: 11px;
+  opacity: .5;
+}
+
+.form input {
+  opacity: 1;
+}
+
+.form-div > textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--white);
+  padding-left: 14px;
+  font-weight: 500;
+  color: var(--white);
+  resize: none;
+  font-family: var(--jost);
+  opacity: 1;
+  font-size: 15px;
+  line-height: 26px;
+}
+.form-div > textarea::placeholder {
+  font-family: var(--jost);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  opacity: .5;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 0;
+  opacity: 1;
+}
+.form input:hover,
+.form textarea:hover {
+  cursor: pointer;
+}
+
+.form-div input:focus {
+  border-bottom: 1px solid var(--white);
+}
+
+.error-div {
+  display: inline-flex;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+}
+
+.error-div img {
+  margin: auto auto auto 9px;
+}
+
+@media screen and (min-width: 768px) {
+   .form > button {
+    margin-inline: auto 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .form {
+    padding: 0;
+  }
+}
