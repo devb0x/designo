@@ -21,7 +21,7 @@ const Hero = () => {
           and engaging brand experiences. Find out more about our services.
         </p>
         <Button class="btn btn-on-dark">
-          <Link to="/about" class="black">Learn more</Link>
+          <Link to="/about" className="dark-grey">Learn more</Link>
         </Button>
       </div>
       <div className={`${classes['hero-wrapper__img']}`}>

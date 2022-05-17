@@ -17,7 +17,7 @@ const Cta = () => {
           Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.
         </p>
         <Button class="btn btn-on-dark">
-          <Link to="/contact" class="dark-grey">get in touch</Link>
+          <Link to="/contact" className="dark-grey">get in touch</Link>
         </Button>
       </div>
     </div>

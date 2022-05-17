@@ -2,11 +2,12 @@ import React from 'react'
 
 import classes from './ProjectCard.module.css'
 import PropTypes from "prop-types"
+import {Link} from "react-router-dom"
 
 const ProjectCard = (props) => {
   return (
-    <a
-      href="#"
+    <Link
+      to=""
       className={`${classes['card']}`}
     >
       <img
@@ -18,7 +19,7 @@ const ProjectCard = (props) => {
         <h3 className={`${classes['card-title']}`}>{props.title}</h3>
         <div className={`${classes['card-description']}`}>{props.description}</div>
       </div>
-    </a>
+    </Link>
   )
 }
 
