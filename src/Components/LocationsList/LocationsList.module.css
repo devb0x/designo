@@ -1,0 +1,77 @@
+.section-locations {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-block: 120px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin-inline: auto;
+  position: relative;
+}
+
+.location-background {
+  width: 202px;
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pattern-top {
+  transform: translateX(-50%) rotate(90deg);
+  z-index: 2;
+}
+.pattern-left {
+  transform: translateX(-50%) rotate(360deg);
+  z-index: 2;
+}
+.pattern-bottom {
+  transform: translateX(-50%) rotate(270deg);
+  z-index: 2;
+}
+
+.location-img {
+  display: flex;
+  margin-inline: auto;
+}
+
+.location-name {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: var(--black);
+}
+
+.location > button {
+  margin-inline: auto;
+  padding: 0;
+}
+
+.location > button > a {
+  display: block;
+  color: var(--white);
+  padding: 16px 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-locations {
+    gap: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-locations {
+    flex-direction: row;
+    margin-block: 160px;
+    gap: 30px;
+  }
+}

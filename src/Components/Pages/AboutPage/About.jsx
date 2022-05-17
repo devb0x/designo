@@ -12,6 +12,7 @@ import realDealImg from '../../../assets/about/mobile/image-real-deal.jpg'
 import realDealImgTablet from '../../../assets/about/tablet/image-real-deal.jpg'
 import realDealImgDesktop from '../../../assets/about/desktop/image-real-deal.jpg'
 import bgPattern from '../../../assets/about/mobile/bg-pattern-hero-about-mobile.svg'
+import LocationsList from "../../LocationsList/LocationsList"
 
 const About = () => {
   const AboutCard = (props) => {
@@ -77,9 +78,7 @@ const About = () => {
         impressed with our high-quality outcomes that encapsulates their brand’s story and mission."
       />
 
-      <hr style={{marginTop: '6rem'}}/>
-      location parts
-      <hr style={{marginBottom: '6rem'}}/>
+      <LocationsList />
 
       <AboutCard
         img={realDealImg}

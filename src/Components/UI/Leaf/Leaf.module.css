@@ -1,5 +1,6 @@
 .leaf,
-.leaf-reverse {
+.leaf-reverse,
+.leaf-alt {
   display: none;
 }
 
@@ -18,5 +19,13 @@
     top: 25%;
     left: 25%;
     transform: rotate(-180deg);
+  }
+  .leaf-alt {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(55%, 30%);
   }
 }

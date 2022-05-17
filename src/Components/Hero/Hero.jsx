@@ -6,6 +6,7 @@ import classes from './Hero.module.css'
 import heroPhone from '../../assets/home/desktop/image-hero-phone.png'
 import bgPattern from '../../assets/home/desktop/bg-pattern-hero-home.svg'
 import Leaf from "../UI/Leaf/Leaf"
+import {Link} from "react-router-dom"
 
 const Hero = () => {
 
@@ -20,7 +21,7 @@ const Hero = () => {
           and engaging brand experiences. Find out more about our services.
         </p>
         <Button class="btn btn-on-dark">
-          Learn more
+          <Link to="/about" class="black">Learn more</Link>
         </Button>
       </div>
       <div className={`${classes['hero-wrapper__img']}`}>

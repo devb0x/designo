@@ -24,17 +24,17 @@ const Footer = () => {
           <hr className={`${classes['divider']} ${classes['mobile']}`}/>
           <ul className={`${classes['nav-list']}`}>
             <li>
-              <Link to='/' className={`${classes['nav-item__link']}`}>
+              <Link to='/about' className={`${classes['nav-item__link']}`}>
                 our company
               </Link>
             </li>
             <li>
-              <Link to='/' className={`${classes['nav-item__link']}`}>
+              <Link to='/locations' className={`${classes['nav-item__link']}`}>
                 locations
               </Link>
             </li>
             <li>
-              <Link to='/' className={`${classes['nav-item__link']}`}>
+              <Link to='/contact' className={`${classes['nav-item__link']}`}>
                 contact
               </Link>
             </li>

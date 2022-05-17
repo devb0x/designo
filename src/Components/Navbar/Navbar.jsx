@@ -12,15 +12,15 @@ const Navbar = (props) => {
 
   return (
     <nav className={`${classes['nav']} content`}>
-      <a
-        href="/"
+      <Link
+        to="/homepage"
         className={`${classes['logo']}`}
       >
         <img
           src={designoDark}
           alt="designo logo"
         />
-      </a>
+      </Link>
       <ul className={
         !isOpen ?
           `${classes['nav-list']}` :
@@ -32,14 +32,14 @@ const Navbar = (props) => {
           </Link>
         </li>
         <li className={`${classes['nav-list__item']}`}>
-          <a href="/">
+          <Link to="/locations">
             locations
-          </a>
+          </Link>
         </li>
         <li className={`${classes['nav-list__item']}`}>
-          <a href="/">
+          <Link to="/contact">
             contact
-          </a>
+          </Link>
         </li>
       </ul>
       <div

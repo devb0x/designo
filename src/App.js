@@ -10,42 +10,55 @@ import AppDesign from "./Components/Pages/AppDesign"
 import GraphicDesign from "./Components/Pages/GraphDesign"
 import Footer from "./Components/Footer/Footer"
 import About from "./Components/Pages/AboutPage/About"
+import Locations from "./Components/Pages/LocationsPage/Locations"
+import ContactPage from "./Components/Pages/ContactPage/ContactPage"
+import ScrollToTop from "./Components/UI/ScrollToTop"
 
 
 
 function App() {
   return (
       <Router>
-        <Navbar />
-        <main className="main">
-          <Routes>
-            <Route
-              exact path={'/'}
-              element={ <Navigate to="/homepage" /> }
-            />
-            <Route
-              exact path={'/homepage'}
-              element={ <Homepage /> }
-            />
-            <Route
-              exact path={'/web-design'}
-              element={ <WebDesign /> }
-            />
-            <Route
-              exact path={'/app-design'}
-              element={ <AppDesign /> }
-            />
-            <Route
-              exact path={'/graphic-design'}
-              element={ <GraphicDesign /> }
-            />
-            <Route
-              exact path={'/about'}
-              element={ <About /> }
-            />
-          </Routes>
-        </main>
-        <Footer />
+        <ScrollToTop>
+          <Navbar />
+          <main className="main">
+            <Routes>
+              <Route
+                exact path={'/'}
+                element={ <Navigate to="/homepage" /> }
+              />
+              <Route
+                exact path={'/homepage'}
+                element={ <Homepage /> }
+              />
+              <Route
+                exact path={'/web-design'}
+                element={ <WebDesign /> }
+              />
+              <Route
+                exact path={'/app-design'}
+                element={ <AppDesign /> }
+              />
+              <Route
+                exact path={'/graphic-design'}
+                element={ <GraphicDesign /> }
+              />
+              <Route
+                exact path={'/about'}
+                element={ <About /> }
+              />
+              <Route
+                exact path={'/locations'}
+                element={ <Locations /> }
+              />
+              <Route
+                exact path={'/contact'}
+                element={ <ContactPage /> }
+              />
+            </Routes>
+          </main>
+          <Footer />
+        </ScrollToTop>
       </Router>
   )
 }
