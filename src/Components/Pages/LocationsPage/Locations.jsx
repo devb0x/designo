@@ -10,13 +10,14 @@ const Locations = () => {
   return (
     <Fragment>
       <section className={`${classes['section-locations']}`}>
-        {data.map(location => (
-          <div className={`${classes['location']}`}>
+        {data.map((location, index) => (
+          <div className={`${classes['location']}`} key={index}>
             <div className={`${classes['location-map']}`}>
               <iframe className={`${classes['location-map__iframe']}`}
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1995576352065!2d-79.3945394!3d43.6440163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d9a0737d9f%3A0xbc1ae74f23fabf4e!2sWellington%20St%20W%2C%20Toronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sfr!4v1652359049028!5m2!1sen!2sfr"
                 style={{border: '0'}} allowFullScreen="" loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                title={location.name}
               />
             </div>
             <div className={`${classes['location-info']}`}>
