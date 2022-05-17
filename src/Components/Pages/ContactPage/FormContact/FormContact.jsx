@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react'
+import React from 'react'
 import { useForm } from "react-hook-form"
 
 import classes from './FormContact.module.css'
@@ -56,7 +56,7 @@ const FormContact = () => {
             "email",
             {
               required: true,
-              pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+              pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
             }
           )}
         />
@@ -74,7 +74,7 @@ const FormContact = () => {
             "phone",
             {
               required: true,
-              pattern: /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/
+              pattern: /^[+]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/
             }
           )}
         />
