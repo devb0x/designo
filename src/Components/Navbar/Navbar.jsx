@@ -15,6 +15,9 @@ const Navbar = (props) => {
       <Link
         to="/homepage"
         className={`${classes['logo']}`}
+        onClick={() => {
+          setIsOpen(false)
+        }}
       >
         <img
           src={designoDark}
@@ -27,17 +30,32 @@ const Navbar = (props) => {
           `${classes['nav-list']} ${classes['mobile']}`
       }>
         <li className={`${classes['nav-list__item']}`}>
-          <Link to="/about">
+          <Link
+            to="/about"
+            onClick={() => {
+              setIsOpen(false)
+            }}
+          >
             our company
           </Link>
         </li>
         <li className={`${classes['nav-list__item']}`}>
-          <Link to="/locations">
+          <Link
+            to="/locations"
+            onClick={() => {
+              setIsOpen(false)
+            }}
+          >
             locations
           </Link>
         </li>
         <li className={`${classes['nav-list__item']}`}>
-          <Link to="/contact">
+          <Link
+            to="/contact"
+            onClick={() => {
+              setIsOpen(false)
+            }}
+          >
             contact
           </Link>
         </li>
@@ -55,7 +73,12 @@ const Navbar = (props) => {
         <img src={!isOpen ? hamburger : close} alt="hamburger icon"/>
       </div>
       {isOpen &&
-        <div  className={`${classes['background']}`}/>
+        <div
+          className={`${classes['background']}`}
+          onClick={() => {
+            setIsOpen(false)
+          }}
+        />
       }
     </nav>
   )
