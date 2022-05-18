@@ -55,6 +55,10 @@ function App() {
                 exact path={'/contact'}
                 element={ <ContactPage /> }
               />
+              <Route
+                path="*"
+                element={ <Navigate to="/homepage" /> }
+              />
             </Routes>
           </main>
           <Footer />
