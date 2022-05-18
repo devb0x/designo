@@ -7,8 +7,20 @@ import Button from "../../../UI/Button/Button"
 import iconError from '../../../../assets/contact/desktop/icon-error.svg'
 
 const FormContact = () => {
-  const { register, handleSubmit, formState: {errors} } = useForm()
-  const onSubmit = data => console.log(data)
+  const { register, handleSubmit, formState: {errors}, reset } = useForm({
+    defaultValues: {
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    }
+  })
+
+  const onSubmit = (data) => {
+    console.log(data)
+    alert(`Thank you ${data.name}.`)
+    reset()
+  }
 
   const ErrorDisplay = (props) => {
 
@@ -18,7 +30,7 @@ const FormContact = () => {
           <>Can't be empty <img src={iconError} alt="icon error"/></>
         }
         {props.pattern &&
-          <>Wrong format <img src={iconError} alt="icon error"/></>
+          <>Please use a valid email address <img src={iconError} alt="icon error"/></>
         }
       </div>
     )
