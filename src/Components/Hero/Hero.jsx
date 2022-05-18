@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Button from "../UI/Button/Button"
 import classes from './Hero.module.css'
 
 import heroPhone from '../../assets/home/desktop/image-hero-phone.png'
@@ -20,9 +19,7 @@ const Hero = () => {
           With over 10 years in the industry, we are experienced in creating fully responsive websites, apps,
           and engaging brand experiences. Find out more about our services.
         </p>
-        <Button class="btn btn-on-dark">
-          <Link to="/about" className="dark-grey">Learn more</Link>
-        </Button>
+        <Link to="/about" className="btn btn-on-dark dark-grey">Learn more</Link>
       </div>
       <div className={`${classes['hero-wrapper__img']}`}>
         <img src={bgPattern} alt="pattern" className={`${classes['pattern']}`}/>

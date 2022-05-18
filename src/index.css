@@ -39,13 +39,8 @@ body {
 }
 
 .root {
-  /*max-width: 1440px;*/
   margin-inline: auto;
   overflow: hidden;
-  /*outline: 1px solid red;*/
-}
-.main {
-
 }
 
 a {
@@ -106,7 +101,6 @@ a {
 }
 .card-top {
   height: 320px;
-  /*background-image: url(./assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg);*/
   background-position: top right;
   background-repeat: no-repeat;
 }
