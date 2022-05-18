@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+import {Link, useLocation} from "react-router-dom"
 
 import data from '../../data/Locations.json'
 import classes from './LocationsList.module.css'
@@ -8,6 +8,7 @@ import Leaf from "../UI/Leaf/Leaf"
 import bgPattern from '../../assets/shared/desktop/bg-pattern-small-circle.svg'
 
 const LocationsList = () => {
+  let loc = useLocation()
 
   return (
     <section className={`${classes['section-locations']}`}>
@@ -36,7 +37,9 @@ const LocationsList = () => {
           </Button>
         </div>
       ))}
-      <Leaf class="leaf-alt" />
+      <Leaf
+        class={loc.pathname === '/about' ? "leaf-alt" : "leaf-contact" }
+      />
     </section>
   )
 }

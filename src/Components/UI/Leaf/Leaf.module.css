@@ -1,6 +1,7 @@
 .leaf,
 .leaf-reverse,
-.leaf-alt {
+.leaf-alt,
+.leaf-contact {
   display: none;
 }
 
@@ -27,5 +28,13 @@
     top: 0;
     right: 0;
     transform: translate(55%, 30%);
+  }
+  .leaf-contact {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(20%, 15%);
   }
 }
