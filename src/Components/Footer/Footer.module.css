@@ -35,6 +35,10 @@
   text-transform: uppercase;
 }
 
+.nav-item__link:hover {
+  text-decoration: underline;
+}
+
 .divider {
   color: var(--darkGrey);
   opacity: .1;

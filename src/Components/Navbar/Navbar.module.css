@@ -46,6 +46,9 @@
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+.nav-list > .nav-list__item > a:hover {
+  text-decoration: underline;
+}
 
 .close {
   display: flex;
