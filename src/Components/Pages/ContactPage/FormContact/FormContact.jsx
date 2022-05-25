@@ -23,6 +23,7 @@ const FormContact = () => {
   }
 
   const ErrorDisplay = (props) => {
+    console.log(props)
 
     return (
       <div className={`${classes['error-div']}`}>
@@ -85,13 +86,11 @@ const FormContact = () => {
           {...register(
             "phone",
             {
-              required: true,
+              required: false,
               pattern: /^[+]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/
             }
           )}
         />
-        {errors.phone?.type === 'required' && <ErrorDisplay required={true} />}
-        {errors.phone?.type === 'pattern' && <ErrorDisplay pattern={true} />}
       </div>
       <div className={`${classes['form-div']}`}>
         <label htmlFor="">
@@ -103,12 +102,12 @@ const FormContact = () => {
           {...register(
             "message",
             {
-              required: true,
-              minLength: 3
+              required: true
             }
           )}
         />
         {errors.message?.type === 'required' && <ErrorDisplay required={true} />}
+        {errors.message?.type === 'minLength' && <ErrorDisplay format={'message'}/>}
       </div>
       <Button class="btn btn-on-dark" type="submit">
         Submit

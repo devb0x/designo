@@ -70,7 +70,7 @@ const Footer = () => {
                     rel="noreferrer"
                     className={ `${classes['social-list__icon']} ${classes[`${el.class}`]} }` }
                   >
-                    <span style={{opacity: 0}}>{el.name}</span>
+                    <p className={`${classes['visually-hidden']}`}>{el.name}</p>
                   </a>
                 </li>
               ))}
